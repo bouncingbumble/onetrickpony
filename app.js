@@ -33,7 +33,7 @@ app.get("/:coin", function(req, res) {
 
 });
 
-
-app.listen(5000, function() {
-    console.log("Server started!!!");
+const PORT = process.env.PORT || 5000
+app.listen(PORT, function() {
+    console.log("Listening on ${ PORT }");
 });
