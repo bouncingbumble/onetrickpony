@@ -1,1 +1,1 @@
-# whatstheprice
+# onetrickpony.io hosted by heroku
