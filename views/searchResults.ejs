@@ -11,11 +11,12 @@
 <% var topMessage = "The price of " + coin + " is $" + price + "."; %>
 
 <h1><%=topMessage%><br><%=message%>.
-
-<form action="/searchResults" method="GET">
-    <input type="text" placeholder="(ie. dogecoin)" name="search">
-    <input type="submit">
-</form>
+    <br>
+    <div class="container">
+      <form action="/searchResults" method="GET"> 
+        <input type="text" name="search" autocomplete="off" autofocus="on"/>
+      </form>
+    </div>
 </h1>
 
 <% include partials/footer %>

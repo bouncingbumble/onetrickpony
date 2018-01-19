@@ -5,4 +5,31 @@ body {
 h1 {
     text-align: center;
     padding-top: 15%;
+    font-size: 45px;
+}
+
+input {
+  position: relative;
+  margin-top: 10px;
+  width: 500px;
+  height: 100px;
+  font-size: 65px;
+  text-align: center;
+  color: #000;
+  border: none;
+  opacity: 1;
+  font-weight: 300;
+}
+
+/* Add in the focus to see bar size and where it is */
+input:focus,
+input:hover,
+select:focus{
+  outline: none;
+  border: none;
+}
+
+form {
+    padding-top: 15px;
+    padding-bottom: 15px;
 }

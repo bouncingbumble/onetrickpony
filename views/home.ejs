@@ -1,11 +1,12 @@
 <% include partials/header %>
 
-<h1>What coin would you like to see?
+<h1>What digital asset would youy like to see?
 
-<form action="/searchResults" method="GET">
-    <input type="text" placeholder="(ie. dogecoin)" name="search">
-    <input type="submit">
-</form>
+    <div class="container">
+      <form action="/searchResults" method="GET"> 
+        <input type="text" name="search" autocomplete="off" autofocus="on"/>
+      </form>
+    </div>
 </h1>
 
 <% include partials/footer %>
