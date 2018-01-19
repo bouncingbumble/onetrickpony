@@ -14,7 +14,6 @@ app.get("/", function(req, res){
 
 app.get("/searchResults", function(req, res) {
     var coin = req.query.search.toLowerCase();
-    var errorMsg = "";
     var data, price, trend;
 
     request('https://api.coinmarketcap.com/v1/ticker/' + coin + '/?convert=USD', function(error, response, body) {
@@ -22,12 +21,12 @@ app.get("/searchResults", function(req, res) {
             data = JSON.parse(body);
             price = data[0]["price_usd"].toLowerCase();
             trend = data[0]["percent_change_7d"];
+            res.render('searchResults', { price: price, coin: coin, trend: trend });
         }
         else {
-            errorMsg = "Sorry, that is not a valid coin.";
-            console.log(errorMsg);
+            res.render('errorPage');
         }
-        res.render('searchResults', { price: price, coin: coin, trend: trend });
+        
     });
 
 });

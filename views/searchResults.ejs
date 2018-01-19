@@ -12,11 +12,7 @@
 
 <h1><%=topMessage%><br><%=message%>.
     <br>
-    <div class="container">
-      <form action="/searchResults" method="GET"> 
-        <input type="text" name="search" autocomplete="off" autofocus="on"/>
-      </form>
-    </div>
+<% include partials/search %>
 </h1>
 
 <% include partials/footer %>
