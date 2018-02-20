@@ -11,14 +11,18 @@ h1 {
 input {
   position: relative;
   margin-top: 10px;
-  width: 500px;
   height: 100px;
+  width: 360px;
   font-size: 65px;
-  text-align: center;
+  text-align: left;
   color: #000;
   border: none;
   opacity: 1;
-  font-weight: 300;
+  font-weight: 100;
+}
+
+::-webkit-input-placeholder {
+  text-align: center;
 }
 
 /* Add in the focus to see bar size and where it is */
