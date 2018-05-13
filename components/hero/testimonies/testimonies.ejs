@@ -1,0 +1,31 @@
+<style type="text/css">
+    .section-testimonies {
+      margin-top: 33%;
+      text-align: center;
+    }
+    
+    .section-testimonies p, i, img, h2{
+      margin-top: 5%;
+    }
+</style>
+
+<section class="section-testimonies">
+    <div class="row">
+      <% hero.testimonies.forEach(function(testimony){ %>
+        <div class="col third">
+        <% if(testimony.imageFirst === true){ %>
+            <img src="<%=testimony.image%>" height="auto" width="100%" alt="">
+            <h2><%-testimony.quote%></h2>
+            <p><%=testimony.name%></p>
+            <i class="fa fa-quote-right"></i>
+        <% } %>
+        <% if(testimony.imageFirst === false){ %>
+            <i class="fa fa-quote-right"></i>
+            <h2><%-testimony.quote%></h2>
+            <p><%=testimony.name%></p>
+            <img src="<%=testimony.image%>" height="auto" width="100%" alt="">
+        <% } %>
+        </div>
+      <% }); %>
+    </div>
+</section>

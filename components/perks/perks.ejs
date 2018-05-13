@@ -1,0 +1,65 @@
+<style type="text/css">
+    .perks {
+      text-align: left;
+      margin-top: 2%;
+    }
+    
+    .perks p {
+      color: #061432;
+      text-align: left;
+      line-height: 1.6;
+    }
+    
+    .perks h4 {
+      color: #061432;
+      text-transform: uppercase;
+      font-size: 84%;
+      font-weight: 700;
+    }
+    
+    .perks h3 {
+      color: #2ab8e4;
+      font-weight: 300;
+      font-size: 200%;
+      margin-top: 5%;
+      margin-bottom: 5%;
+    }
+    
+    .perks .text {
+      padding-top: 15%;
+      padding-bottom: 10%;
+      padding-left: 7%;
+      padding-right: 10%;
+    }
+    
+    .perks .small-img {
+      width: 100%;
+      display: inline-block;
+      max-height: 205px;
+    }
+    
+    .perks .big-img {
+      width: 100%;
+    }
+</style>
+
+<section class="perks">
+    <div class="row">
+        <div class="col half text">
+            <h4><%= perk.heading1 %></h4>
+            <h3><%= perk.heading2 %></h3>
+            <p><%= perk.desc %></p>
+        </div>
+        <div class="col half">
+            <img class="big-img" src="<%= perk.bigImg %>"></img>
+            <div class="row">
+                <div class="col half">
+                  <img class="small-img" src="<%= perk.img1 %>"></img>
+                </div>              
+                <div class="col half">
+                  <img class="small-img" src="<%= perk.img2 %>"></img>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

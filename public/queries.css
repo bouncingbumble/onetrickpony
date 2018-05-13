@@ -1,0 +1,154 @@
+/*large tablet*/
+@media only screen and (max-width: 1200px) {
+  .hero-text-box {
+    width: 100%;
+  }
+  
+  .row { padding: 0 2%; }
+}
+
+/*ipad*/
+@media only screen and (max-width: 1023px) {
+    body { font-size: 18px; }
+    section {
+        padding: 60px 0;
+    }
+    
+    .small-img {
+        display: none !important;
+    }
+    
+    .perks .text {
+        padding-top: 0 !important;
+        padding-right: 5% !important;
+    }
+    
+    .perks img {
+        padding-top: 10%;
+    }
+    
+    header {
+        height: 150vh !important;
+    }
+}
+
+/*plus size phones*/
+@media only screen and (max-width: 767px) {
+    body { font-size: 16px; }
+    .hero-text-box {
+        top: 10% !important;
+        margin-bottom: 35px;
+    }
+    nav{
+        display: block;
+    }
+    nav .logo {
+        height: auto;
+        width: 380px;
+        margin-top: 20px;
+        margin-left: 39%;
+        margin-right: 33%;
+    }
+    nav .search {
+        display: none;
+    }
+    
+    header {
+        height: 130vh !important;
+    }
+    
+    .small-img {
+        display: none !important;
+    }
+    
+    .perks .text {
+        padding-top: 0 !important;
+        padding-right: 5% !important;
+    }
+    
+    .perks img {
+        padding-top: 10%;
+    }
+    
+    .image-feed {
+        margin-top: 0 !important;
+    }
+    
+}
+
+/*small phones*/
+@media only screen and (max-width: 480px) {
+    html,body
+    {
+        width: 100%;
+        height: 100%;
+        margin: 0px;
+        padding: 0px;
+        overflow-x: hidden; 
+    }
+    body { font-size: 14px; }
+    .hero-text-box {
+        top: 10% !important;
+        margin-bottom: 35px;
+    }
+    nav{
+        display: block;
+    }
+    nav .logo {
+        height: auto;
+        width: 380px;
+        margin-top: 20px;
+        margin-left: 0;
+    }
+    nav .search {
+        display: none;
+    }
+    
+    .section-testimonies img {
+        width: 80%;
+    }
+    
+    .section-testimonies h2 {
+        width: 70%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    
+    .section-testimonies div:nth-child(2) {
+        display: none;
+    }
+    
+    header {
+        height: 220vh !important;
+    }
+    
+    .perks .text {
+        padding: 5% 5% !important;
+    }
+    
+    section {
+        padding-top: 6% !important;
+    }
+    
+    .creds {
+        padding-top: 1% !important;
+        padding-bottom: 5% !important;
+    }
+    
+    .section-testimonies div:nth-child(2) {
+        display: none;
+    }
+    
+    .small-img {
+        display: none !important;
+    }
+    
+    .perks {
+        padding-bottom: 0px !important;
+    }
+    
+    
+    .creds .row div:nth-child(n + 2) {
+        display: none;
+    }
+}

@@ -1,0 +1,70 @@
+<style type="text/css">
+  .image-feed {
+    text-align: center;
+    margin-top: 5%;
+  }
+  
+  .image-feed h4 {
+    color: #061432;
+    text-transform: uppercase;
+    font-size: 84%;
+    font-weight: 700;
+  }
+  
+  .image-feed h3 {
+    color: #2ab8e4;
+    font-weight: 300;
+    font-size: 200%;
+    margin-top: 2%;
+  }
+  
+  .instagram {
+    margin-top: 5%;
+    list-style: none;
+    width: 100%;
+  }
+  
+  .instagram li {
+    display: block;
+    float: left;
+    width: 25%;
+  }
+  
+  .photo {
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    background-color: black;
+  }
+  
+  .photo img {
+    width: 100%;
+    height: auto;
+    transform: scale(1.5);
+    transition: transform 0.5s, opacity 0.5s;
+    opacity: 0.8;
+  }
+  
+  .photo img:hover {
+    transform: scale(1.3);
+    opacity: 1;
+  }
+</style>
+
+<section class="image-feed">
+  <div class="row">
+      <h4><%= photoFeed.heading1 %></h4>
+      <h3><%= photoFeed.heading2 %></h3>
+  </div>
+  <div>
+    <ul class="instagram">
+    <% photoFeed.grams.forEach(function(gram){ %>
+    <li>
+      <figure class="photo">
+        <img src="<%= gram.src %>"></img>
+      </figure>
+    </li>
+    <% }); %>
+  </ul>
+  </div>
+</section>

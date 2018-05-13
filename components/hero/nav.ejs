@@ -1,0 +1,44 @@
+<style type="text/css">
+  input {
+    border-radius: 200px;
+    border: 1.5px solid #2ab8e4;
+    text-align: left;
+    color: #000;
+    opacity: 1;
+    font-size: 110%;
+    padding-left: 10px;
+  }
+
+  /* Add in the focus to see bar size and where it is */
+  input:focus,
+  input:hover,
+  select:focus{
+    outline: none;
+  }
+  
+  .logo {
+    height: 100px;
+    width: auto;
+    margin-top: 20px;
+    margin-left: 3%;
+  }
+  
+  .search {
+    height: 50px;
+    width: 300px;
+    margin-top: 32px;
+    margin-right: 3%;
+    float: right;
+  }
+</style>
+	
+<nav>
+  <div class="row">
+    <div class="col half">
+      <img src="<%= hero.logoSrc %>" alt="csod logo" class="logo">
+    </div>
+    <div class="col half">
+      <input class="search" type="text" name="search" placeholder="<%= hero.searchTxt %>"/>
+    </div>
+  </div>
+</nav>
